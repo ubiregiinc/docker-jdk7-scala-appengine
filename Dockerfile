@@ -1,5 +1,5 @@
 FROM maven:3-jdk-7
-ARG APPENGINE_SDK="appengine-java-sdk-1.9.24"
+ARG APPENGINE_SDK="appengine-java-sdk-1.9.64"
 RUN curl -o /tmp/$APPENGINE_SDK.zip https://storage.googleapis.com/appengine-sdks/featured/$APPENGINE_SDK.zip
 RUN apt update && apt install -y apt-transport-https unzip bc
 RUN mkdir -p /usr/share/appengine-sdk
